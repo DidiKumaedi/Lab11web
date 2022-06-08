@@ -80,4 +80,29 @@ CI_ENVIRINMENT menjadi development.
 
 ![image](https://user-images.githubusercontent.com/101849655/172691910-c2b4aa55-943d-43ed-b002-4e8ea82be399.png)
 
+##Routing dan Controller
+
+Router terletak pada file app/config/Routes.php. Pada file tersebut kita dapat mendefinisikan route untuk aplikasi yang kita buat.
+
+Contoh: ```$routes->get('/', 'Home::index'); Kode tersebut akan mengarahkan rute untuk halaman home.
+
+## Membuat Route Baru.
+
+Tambahkan kode berikut di dalam Routes.php
+
+![image](https://user-images.githubusercontent.com/101849655/172693557-2cb57665-7455-4741-a6a3-e4d0c8f08fd8.png)
+
+Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perintah berikut. php spark routes
+
+![image](https://user-images.githubusercontent.com/101849655/172693634-ead3475a-d774-4b8b-8e4d-1af64b143329.png)
+
+Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about
+
+![image](https://user-images.githubusercontent.com/101849655/172694207-e690eec1-e04c-4d43-ae73-9fecfe516ed1.png)
+
+Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
+
+## Membuat Controller
+
+Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
 
