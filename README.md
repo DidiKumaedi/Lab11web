@@ -66,3 +66,18 @@ Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan di
 pesan kesalahan seperti berikut.
 
 ![image](https://user-images.githubusercontent.com/101849655/172672638-cda874fe-e06c-4ad8-9ae9-3143074642d9.png)
+
+Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis
+errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi
+pada environment variable CI_ENVIRINMENT menjadi development.
+
+Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable
+CI_ENVIRINMENT menjadi development.
+
+![image](https://user-images.githubusercontent.com/101849655/172691606-73c61bcc-2e14-45b0-a39e-7f2bc36615fc.png)
+
+![image](https://user-images.githubusercontent.com/101849655/172691796-9747a1d6-c247-41cf-9a4a-438d6a0fd878.png)
+
+![image](https://user-images.githubusercontent.com/101849655/172691910-c2b4aa55-943d-43ed-b002-4e8ea82be399.png)
+
+
