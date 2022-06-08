@@ -106,3 +106,4 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
 
 Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
 
+![image](https://user-images.githubusercontent.com/101849655/172714976-77de3f23-be5f-4871-8a4e-e20f5d8b0b00.png)
