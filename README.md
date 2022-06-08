@@ -65,4 +65,4 @@ mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program.
 Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan
 pesan kesalahan seperti berikut.
 
-![image](https://user-images.githubusercontent.com/101849655/172671380-c3410122-c552-4e48-a858-3d33dd60515c.png)
+![image](https://user-images.githubusercontent.com/101849655/172672638-cda874fe-e06c-4ad8-9ae9-3143074642d9.png)
