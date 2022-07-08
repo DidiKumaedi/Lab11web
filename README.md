@@ -314,3 +314,21 @@ Fungsi Logout Tambahkan method logout pada Controller User seperti berikut:
 ![image](https://user-images.githubusercontent.com/101849655/178048050-bdff59ff-11df-471d-952f-53914a30e77b.png)
 
 
+# Praktikum 14
+
+Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode pada method admin_index seperti berikut.
+
+![image](https://user-images.githubusercontent.com/101849655/178058209-f8e96d1a-4fdd-446f-b994-19098f84151d.png)
+
+Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut dibawah deklarasi tabel data.
+
+![image](https://user-images.githubusercontent.com/101849655/178058542-80d75fa0-f5ce-49c8-829d-2d8bdf20b385.png)
+
+Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
+
+![image](https://user-images.githubusercontent.com/101849655/178058675-55ff59c0-f0d5-4de8-b792-cfd80e56c183.png)
+
+Membuat Pencarian Pencarian data digunakan untuk memfilter data.
+
+Untuk membuat pencarian data, buka kembali Controller Artikel, pada method admin_index ubah kodenya seperti berikut
+
