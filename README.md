@@ -107,3 +107,87 @@ Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/pa
 Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
 
 ![image](https://user-images.githubusercontent.com/101849655/172714976-77de3f23-be5f-4871-8a4e-e20f5d8b0b00.png)
+
+hasil 
+![image](https://user-images.githubusercontent.com/101849655/177944013-b4edb8f9-3e5d-471c-a075-8fd5954ca16f.png)
+
+Tambahkan method baru pada controllers page berikkut
+
+![image](https://user-images.githubusercontent.com/101849655/177940506-e5d3cc0a-4045-4f9c-bcc2-3073321b086c.png)
+
+hasil
+
+![image](https://user-images.githubusercontent.com/101849655/177943903-1120a088-aef3-43b0-87ff-b05d1f8cfe92.png)
+
+Membuat View Selanjutnya dalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about.php pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut.
+
+![image](https://user-images.githubusercontent.com/101849655/177943437-b0d2382b-8478-4a11-944e-da757413af83.png)
+
+Ubah method about pada class Controller Page menjadi seperti berikut:
+
+![image](https://user-images.githubusercontent.com/101849655/177943607-81b9be82-db4e-4377-a3e8-d55cac01cc53.png)
+
+![image](https://user-images.githubusercontent.com/101849655/177943779-5524df28-2955-4f7f-a92a-8faa19912d2f.png)
+
+hasil
+
+![image](https://user-images.githubusercontent.com/101849655/177944529-df14b680-9b08-452d-9c6f-55fcb312b6f7.png)
+
+Buat file css pada direktori public dengan nama style.css (copy file dari praktikum lab4_layout. Kita akan gunakan layout yang pernah dibuat pada praktikum 4.
+
+![image](https://user-images.githubusercontent.com/101849655/177946696-4b719ded-e9fb-404e-b83f-a8a668f41f30.png)
+
+Kemudian buat folder template pada direktori view kemudian buat file header.php dan footer.php File app/view/template/header.php
+
+![image](https://user-images.githubusercontent.com/101849655/177946833-1b78d82b-5eda-4d44-85ed-8af8d75a5c9a.png)
+
+![image](https://user-images.githubusercontent.com/101849655/177946930-d4114e69-20af-4f51-89a0-497a6b7cf418.png)
+
+![image](https://user-images.githubusercontent.com/101849655/177947097-e5b6dbc8-2fb9-44b0-9e46-ebb69f4d0466.png)
+
+
+# Praktikum 12
+
+Membuat Database: Studi Kasus Data Artikel
+
+Membuat Database
+
+CREATE DATABASE lab_ci4
+
+Membuat Tabel
+
+![image](https://user-images.githubusercontent.com/101849655/177954304-062fb1db-e054-4a9f-b004-77a034060fe6.png)
+
+Konfigurasi koneksi database Selanjutnya membuat konfigurasi untuk menghubungkan dengan database server. Konfigurasi dapat dilakukan dengan du acara, yaitu pada file app/config/database.php atau menggunakan file .env. Pada praktikum ini kita gunakan konfigurasi pada file .env.
+
+![image](https://user-images.githubusercontent.com/101849655/177955063-ce54589d-b9c1-4e4b-98ea-d4ea0037b1d7.png)
+
+Membuat Model
+Selanjutnya adalah membuat Model untuk memproses data Artikel. Buat file baru pada
+direktori app/Models dengan nama ArtikelModel.php
+
+![image](https://user-images.githubusercontent.com/101849655/177955776-e2535516-7dc6-4eef-bca1-40954cdb0acc.png)
+
+Membuat Controller
+Buat Controller baru dengan nama Artikel.php pada direktori app/Controllers.
+
+![image](https://user-images.githubusercontent.com/101849655/177955939-3ee0f78b-a397-488a-83e8-4e837dd560d3.png)
+
+Membuat View
+Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat file
+baru dengan nama index.php.
+
+![image](https://user-images.githubusercontent.com/101849655/177956871-3f4273ce-3ffb-4e47-a315-cb6785489277.png)
+
+hasil
+
+![image](https://user-images.githubusercontent.com/101849655/177956996-ddcbd201-3023-4897-9416-4110fd5a944a.png)
+
+Belum ada data yang diampilkan. Kemudian coba tambahkan beberapa data pada database agar dapat ditampilkan datanya
+
+![image](https://user-images.githubusercontent.com/101849655/177957640-308e8e9d-6299-431b-b957-a02f50f5d2ca.png)
+
+hasil
+
+![image](https://user-images.githubusercontent.com/101849655/177957824-6917fd83-3c24-48b4-8353-30c5b871725a.png)
+
