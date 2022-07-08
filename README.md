@@ -191,3 +191,126 @@ hasil
 
 ![image](https://user-images.githubusercontent.com/101849655/177957824-6917fd83-3c24-48b4-8353-30c5b871725a.png)
 
+Membuat View Detail
+Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php.
+
+![image](https://user-images.githubusercontent.com/101849655/178027030-73b36020-820c-4691-9cad-704c2fbfce99.png)
+
+![image](https://user-images.githubusercontent.com/101849655/178027407-37186923-99e3-4d0e-aa93-5f785d674cf3.png)
+
+![image](https://user-images.githubusercontent.com/101849655/178027638-11080b2f-2fce-4132-96d2-56aa0d5fd25c.png)
+
+Membuat Menu Admin
+Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada
+Controller Artikel dengan nama admin_index().
+
+![image](https://user-images.githubusercontent.com/101849655/178028673-c92db06b-2985-4b1b-aa16-7739d63aecce.png)
+
+Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php
+
+![image](https://user-images.githubusercontent.com/101849655/178029460-8df42772-ff3f-452e-b468-04a15263a541.png)
+
+![image](https://user-images.githubusercontent.com/101849655/178029505-a2940c31-e460-4cc6-8cbc-e772894eeb28.png)
+
+Tambahkan routing untuk menu admin seperti berikut:
+
+![image](https://user-images.githubusercontent.com/101849655/178030664-e6227e5e-41a8-49f1-b8cd-f8e09bc9a131.png)
+
+Akses menu admin dengan url http://localhost:8080/admin/artikel
+
+![image](https://user-images.githubusercontent.com/101849655/178031327-4a308acd-cebf-4e29-8961-9954b738f448.png)
+
+Menambah Data Artikel, tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
+
+![image](https://user-images.githubusercontent.com/101849655/178031805-48edfe90-3d59-41b3-be36-e1ff0cf46a7b.png)
+
+Kemudian buat view untuk form tambah dengan nama form_add.php
+
+![image](https://user-images.githubusercontent.com/101849655/178032477-ef4f81ba-78d7-4250-9afa-05f123741b3a.png)
+
+![image](https://user-images.githubusercontent.com/101849655/178032677-09011a63-7efe-4ca5-aa23-dfdddd8252a0.png)
+
+Mengubah Data
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
+
+![image](https://user-images.githubusercontent.com/101849655/178033154-f4a23f9e-d1b7-4237-8345-72b30fca05fa.png)
+
+Kemudian buat view untuk form tambah dengan nama form_edit.php
+
+![image](https://user-images.githubusercontent.com/101849655/178033423-60f94951-18e2-4007-91df-b65ecf6f265b.png)
+
+![image](https://user-images.githubusercontent.com/101849655/178033606-510aac15-bfa9-49ae-a70b-ff8693476521.png)
+
+Menghapus Data
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
+
+![image](https://user-images.githubusercontent.com/101849655/178034421-d2d08033-9537-45db-9ed6-faab87de67f7.png)
+
+
+# Praktikum 13
+
+Langkah-langkah Praktikum Persiapan. Untuk memulai membuat modul Login, yang perlu disiapkan adalah database server menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
+
+Membuat Tabel: User Login
+
+![image](https://user-images.githubusercontent.com/101849655/178036536-de6f285f-8652-4f6f-9d2c-b7a5a79892da.png)
+
+Membuat Model User
+Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada
+direktori app/Models dengan nama UserModel.php
+
+![image](https://user-images.githubusercontent.com/101849655/178036897-7f298f7e-c74e-43d5-988a-4cf84529e2ef.png)
+
+Membuat Controller User
+Buat Controller baru dengan nama User.php pada direktori app/Controllers.
+Kemudian tambahkan method index() untuk menampilkan daftar user, dan method
+login() untuk proses login.
+
+![image](https://user-images.githubusercontent.com/101849655/178039010-795e6336-d907-4436-8a5b-b37c2c1580cb.png)
+
+![image](https://user-images.githubusercontent.com/101849655/178040272-84d0caad-a3c1-40d7-85c6-ea3ab2ad0f91.png)
+
+Membuat View Login Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php.
+
+![image](https://user-images.githubusercontent.com/101849655/178041357-55cc3d21-bd3c-4e81-8896-87e33060c77a.png)
+
+Membuat Database Seeder
+Database seeder digunakan untuk membuat data dummy. Untuk keperluan ujicoba modul
+login, kita perlu memasukkan data user dan password kedaalam database. Untuk itu buat
+database seeder untuk tabel user. Buka CLI, kemudian tulis perintah berikut:
+
+![image](https://user-images.githubusercontent.com/101849655/178042043-8ceb1517-0502-4e09-b72b-9c52cf607ae1.png)
+
+Selanjutnya, buka file UserSeeder.php yang berada di lokasi direktori /app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut
+
+![image](https://user-images.githubusercontent.com/101849655/178042493-dceb550b-e808-46be-85c3-a04ecff8babe.png)
+
+Selanjutnya buka kembali CLI dan ketik perintah berikut:
+
+![image](https://user-images.githubusercontent.com/101849655/178043219-d3677c50-cc97-4321-ae96-f175eee9b971.png)
+
+Uji Coba Login Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
+
+![image](https://user-images.githubusercontent.com/101849655/178043434-5ade7ab3-96d9-4b2d-81f9-e0e9ca32654d.png)
+
+Menambahkan Auth Filter Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters.
+
+![image](https://user-images.githubusercontent.com/101849655/178045737-973ce4e5-cc6b-4168-887d-f483455eecef.png)
+
+Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut: 'auth' => App\Filters\Auth::class
+
+![image](https://user-images.githubusercontent.com/101849655/178046619-d99afaa1-d856-4b2e-96df-107bce946925.png)
+
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya.
+
+![image](https://user-images.githubusercontent.com/101849655/178047250-b96b2daa-3475-4feb-8eff-313046b34bff.png)
+
+Percobaan Akses Menu Admin Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka, akan dimuculkan halaman login.
+
+![image](https://user-images.githubusercontent.com/101849655/178047578-e012313e-a95f-4108-bc62-9da6423879f7.png)
+
+Fungsi Logout Tambahkan method logout pada Controller User seperti berikut:
+
+![image](https://user-images.githubusercontent.com/101849655/178048050-bdff59ff-11df-471d-952f-53914a30e77b.png)
+
+
