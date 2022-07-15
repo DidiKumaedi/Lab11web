@@ -88,8 +88,7 @@ php spark routes
 Membuat Controller
 
 
-![image](https://user-images.githubusercontent.com/101645216/172684870-ad6dd10d-36bb-47c0-8bdc-473a0cbe6127.png)
-
+![image](https://user-images.githubusercontent.com/101849655/179237935-fce095f8-5480-4ae8-a96b-0fbfafdabd90.png)
 
 Hasil browser 
 
@@ -326,7 +325,6 @@ Uji Coba Login
 Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
 
 
-![image](https://user-images.githubusercontent.com/101645216/174940575-1764086a-d0b3-4e58-bcfe-ba3e5da4584a.png)
 
 Menambahkan Auth Filter
 Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php
