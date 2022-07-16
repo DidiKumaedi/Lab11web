@@ -324,6 +324,7 @@ Selanjutnya, buka file UserSeeder.php yang berada di lokasi direktori
 Uji Coba Login
 Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
 
+![image](https://user-images.githubusercontent.com/101849655/179337390-ceb05049-21c5-44cf-9d0d-2c62c83146a7.png)
 
 
 Menambahkan Auth Filter
